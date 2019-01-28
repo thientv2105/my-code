@@ -242,6 +242,8 @@ Sang thanh5 */
     font-size: 15px;
     background-color: wheat;
     transition: 0.4s;
+    padding-left: 10px;
+    padding-right: 10px;
 
 }
 .vlxx .thanh5 span a{
