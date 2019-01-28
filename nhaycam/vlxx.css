@@ -1,0 +1,271 @@
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { 
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000; 
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;   
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+/* Thanh1 */
+.vlxx {
+    width: 980px;
+    margin: auto;
+    background-color: rgb(27, 21, 21);
+}
+.vlxx .thanh1{
+    width: 100%;
+    height: 80px;
+
+
+}
+.vlxx .thanh1 a{
+    text-decoration: none;
+    color: rgb(207, 20, 20);
+}
+.vlxx .thanh1 a h1{
+    font-size: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.vlxx .thanh1 a h1:hover{
+    color: rgb(250, 23, 23);
+    
+}
+/* het thanh1
+sang thanh2 */
+.vlxx .thanh2{
+    width: 98%;
+    margin: auto;
+    height: 40px;
+    
+}
+    .vlxx .thanh2 ul{
+        display:flex;
+        width: 100%;
+
+    }
+.vlxx .thanh2 ul li{
+    list-style: none;
+    font-size: 15px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 12px;
+    padding-right: 12px;
+    background-color: rgb(10, 8, 8);
+    text-transform: uppercase;
+}
+.vlxx .thanh2 ul li a{
+    text-decoration: none;
+    color: rgb(255, 251, 251);
+    font-family: segoe ui;
+
+}
+.vlxx .thanh2 ul li a:hover{
+    color:red;
+}
+/* hét thanh 2
+sang thanh3 */
+.vlxx .thanh3{
+    width: 100%;
+    height: 40px;
+
+}
+.vlxx .thanh3 span.so1 a{
+    font-family: segoe ui;
+    font-size: 15px;
+    color: #ffffff;
+    text-decoration: none;
+}
+.vlxx .thanh3 span.so1 a:hover{
+    color: red;
+}
+.vlxx .thanh3 span.so2{
+    margin-left: 620px;
+}
+.vlxx .thanh3 span.so2 span.so21 {
+    padding-top: 0px;
+    border: #614c4c solid 2px;
+    background-color: #614c4c;
+    border-radius: 5px;
+}
+.vlxx .thanh3 span.so2 span.so21 a{
+    color: white;
+    text-decoration: none;
+
+}
+.vlxx .thanh3 span.so2 span.so21:hover{
+    background-color: rgb(27, 23, 23);
+}
+.vlxx hr.kengang{
+    width: 100%;
+    margin-top: 0px;
+    margin-bottom: 5px; 
+}
+/* Thanh4 */
+.vlxx .thanh4{
+    width: 100%;
+    margin: auto;
+
+}
+.vlxx .thanh4 ul{
+    display:flex;
+    margin: auto;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+.vlxx .thanh4 ul li{
+    list-style: none;
+    width: 240px;
+    height: 250px;
+    margin: auto;
+}
+.vlxx .thanh4 ul li a.so1{
+    text-decoration: none;
+}
+.vlxx .thanh4 ul li a.so1 img{
+    width: 235px;
+    height: 190px;
+}
+.vlxx .thanh4 ul li a.so2{
+    width: 235px;
+    text-decoration: none;
+
+}
+.vlxx .thanh4 ul li a.so2 h1{
+    font-family: segoe ui;
+    color: #e0dcdc;
+    font-size: 13px;
+    text-align: center;
+    padding-top: 10px;
+
+}
+.vlxx .thanh4 ul li a.so2 h1:hover{
+    color: #ffffff;
+}
+/* hết thanh4
+Sang thanh5 */
+.vlxx .thanh5{
+    width: 100%;
+    height: 36px;
+    text-align: center;
+}
+.vlxx .thanh5 span{
+    border: #cccccc solid 1px;
+    font-family: segoe ui;
+    font-size: 15px;
+    background-color: wheat;
+    transition: 0.4s;
+
+}
+.vlxx .thanh5 span a{
+    text-decoration: none;
+    color: #414141;
+    transition: 0.4s;
+}
+.vlxx .thanh5 span a:hover{
+color: white;
+}
+
+.vlxx .thanh5 span:hover{
+    background-color: #312b2b;
+}
+
+.vlxx hr.kengang2{
+    width: 100%;
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+/* Sang thanh6 */
+.thanh6{
+    width: 100%;
+    color: #414141;
+    font-family: segoe ui;
+    font-size: 15px;
+}
