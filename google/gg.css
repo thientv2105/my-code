@@ -4,7 +4,7 @@
     --mau1 : rgba(0,0,0,0.87);
     --mau2 : #727070;
     --mau3 : rgb(243, 242, 242);
-    --size1 : 13px;
+    --size1 : 12px;
     --size2 : 18px;
     --size3 : 25px;
     --size4 : 14px;
@@ -166,9 +166,11 @@
         width: 450px;
         height: 450px;
         overflow: hidden;
+        transition: 0.5s;
     }
     .thanh2 .timkiem a .fa{
     left: 400px;
+    transition: 0.5s;
     }
     .thanh2 .demuc ul li{
         width :25%;
@@ -176,6 +178,7 @@
 }
 @media(max-width:567px){
     .thanh2{
+        transition: 0.5s;
         width: 335px;
         height: 450px;
         overflow: hidden;
