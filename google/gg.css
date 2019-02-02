@@ -7,6 +7,7 @@
     --size1 : 13px;
     --size2 : 18px;
     --size3 : 25px;
+    --size4 : 14px;
     --font1 : small arial,sans-serif;
 }
 /* Thanh sô1  */
@@ -82,6 +83,7 @@
     background-color: var(--mau3);
     text-align: left , 50px;
     position: absolute;
+    font-size: var(--size4);
 }
 
 .thanh2 .timkiem a .fa{
@@ -158,5 +160,30 @@
  }
  .thanh3 .fa:hover{
     background-color : var(--mau2);
-
- }
+}
+@media(max-width: 992px) and (min-width:567px){
+    .thanh2{
+        width: 450px;
+        height: 450px;
+        overflow: hidden;
+    }
+    .thanh2 .timkiem a .fa{
+    left: 400px;
+    }
+    .thanh2 .demuc ul li{
+        width :25%;
+    }
+}
+@media(max-width:567px){
+    .thanh2{
+        width: 335px;
+        height: 450px;
+        overflow: hidden;
+    }
+    .thanh2 .timkiem a .fa{
+        left: 300px;
+    }
+    .thanh2 .demuc ul li{
+        width: 33.33%;
+    }
+}
