@@ -4,6 +4,7 @@
     --mau1 : rgba(0,0,0,0.87);
     --mau2 : #727070;
     --mau3 : rgb(243, 242, 242);
+    --mau4 : rgb(226, 221, 221);
     --size1 : 12px;
     --size2 : 18px;
     --size3 : 25px;
@@ -64,6 +65,8 @@
     display: block;
     margin: 100px auto;
     margin-bottom: 0px;
+    transition: 0.5s;
+
 }
 .thanh2 img{
     margin: 0px auto;
@@ -152,14 +155,14 @@
     display: block;
     font-size: var(--size2);
     color: black;
-    border-radius: 2px;
+    border-radius: 5px;
     position: absolute;
     top: 0px;
     right: 15px;
     padding: 3px 5px;
  }
  .thanh3 .fa:hover{
-    background-color : var(--mau2);
+    background-color : var(--mau4);
 }
 @media(max-width: 992px) and (min-width:567px){
     .thanh2{
