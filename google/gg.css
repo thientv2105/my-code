@@ -63,13 +63,15 @@
 .thanh2{
     width: 567px;
     display: block;
-    margin: 100px auto;
+    margin: auto;
     margin-bottom: 0px;
     transition: 0.5s;
 
 }
-.thanh2 img{
-    margin: 0px auto;
+.thanh2 > img{
+    width: 500px;
+    height: 200px;
+    margin: auto;
     display: block;
 }
 .thanh2 .timkiem{
@@ -80,7 +82,7 @@
 }
 .thanh2 .timkiem input{
     width: 100%;
-    height: 50px;
+    height: 45px;
     border-radius: 50px;
     border: none;
     background-color: var(--mau3);
@@ -99,7 +101,7 @@
     width: 100%;
     margin-top: 30px;
 }
-.thanh2 .demuc ul{
+.thanh2 .demuc  ul{
     display: flex;
     flex-wrap: wrap;
     list-style: none;
@@ -125,7 +127,7 @@
 
 }
 .thanh2 .demuc a._1muc p{
-    display: inline-block;
+    display: block;
     font-size: var(--size1);
     margin-top:15px;
 
