@@ -1,0 +1,693 @@
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { 
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000; 
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;   
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+/* mogo */
+/* Thanh1 */
+.mogo .thanh1 {
+    width: 100%;
+    height: 80px;
+    position: relative;
+    position: fixed;
+    z-index: 5;
+    background-color: white;
+    transition: 0.5s;
+}
+.mogo .thanh1.menunho{
+}
+.mogo .thanh1 ul.bo  {
+    display: flex;
+    list-style: none;
+
+}
+.mogo .thanh1 img {
+    background-color: #fe5a1a;
+    padding: 20px 60px;
+    height: 100%;
+    width: 100%;
+    display: inline-block;
+}
+.mogo .thanh1 ul.bo li {
+    position: relative;
+}
+.mogo .thanh1 ul.bo li .faa{
+    margin-right: 40px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fe5a1a;
+    transition: 0.7s;
+    line-height: 80px;
+}
+.mogo .thanh1 ul.bo li .faaa{
+margin-left: 230px;
+}
+.mogo .thanh1 ul.bo li .faa:hover{
+    color: rgb(95, 82, 82);
+}
+.mogo .thanh1 ._1item {
+    font-size: 16px;
+}
+.mogo .thanh1 ul.bo li .faab{
+    color: rgb(120, 160, 160);
+}
+.mogo .thanh1 ._1item a.tren {
+    text-decoration: none;
+    color: #777;
+    text-transform: uppercase;
+    height: 80px;
+    line-height: 80px;
+    padding: 18px;
+    font-weight: 500;
+    transition: 1s;
+}
+.mogo .thanh1 ._1item a.tren:hover {
+    color: rgb(82, 78, 78);
+}
+.mogo .thanh1 ._1item a.collection {
+    position: relative;
+}
+.mogo .thanh1 ._1item a.collection::after {
+content: '';
+top: 7px;
+left: 20px;
+height: 15px;
+width: 35px;
+color: rgb(117, 87, 87);
+background-color: red;
+position: absolute;
+}
+.mogo .thanh1 ._1item a.tren .fa {
+    font-size: 10px;
+    line-height: 10px;
+}
+.mogo .thanh1 ._1item ul.con {
+    list-style: none;
+    width: 270px;
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    background-color: rgb(245, 242, 237);
+    margin-top: 40px;
+    transition: 0.5s;
+    margin-left: -20px;
+    font-weight: 600;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    z-index: 1;
+}
+.mogo .thanh1 ._1item:hover ul.con {
+    visibility: visible;
+    opacity: 1;
+    margin-top: 0px;
+}
+.mogo .thanh1 ._1item ul.con li {
+    padding-left: 34px;
+}
+.mogo .thanh1 ._1item ul.con li a{
+    text-decoration: none;
+    color: #777;
+
+}
+/* Thanh3 */
+.mogo{ width: 100%; height: 100%;}
+.mogo .thanh3{
+    width: 100%;
+    height: 670px;
+    display: flex;
+    padding-top: 80px;
+}
+.mogo .thanh3 .trai{width: 900px; height: 670px;}
+.mogo .thanh3 .trai .traitren{ width: 100%; height: 50%; display: flex;}
+.mogo .thanh3 .trai .traitren .trena{
+    width: 50%;
+    position: relative;
+    overflow: hidden;
+    height: 100% ;
+}
+.mogo .thanh3 .trai .traitren .trena img{
+    width: 105%;
+    position: absolute;
+    left: -10px;
+    transition: 0.7s;
+}
+.mogo .thanh3 .trai .traitren .trena:hover img{
+    left: 0px;
+}
+.mogo .thanh3 .trai .traitren .trena h1.so1{
+    position: absolute;
+    top: 40px;
+    left: 80px;
+    font-size: 30px;
+    opacity: 1;
+    transition: 0.7s;
+    color: #414141;
+}
+.mogo .thanh3 .trai .traitren .trena .mantrang{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: rgb(255, 255, 255);
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+}
+.mogo .thanh3 .trai .traitren .trena:hover .mantrang{
+    opacity: 0.7;
+}
+.mogo .thanh3 .trai .traitren .trena:hover h1.so1{
+    opacity: 0;
+}
+.mogo .thanh3 .trai .traitren .trena .so23{
+    position: absolute;
+    top: 40%;
+    left: 0px;
+    text-align: center;
+    width: 100%;
+    overflow: hidden;
+}
+.mogo .thanh3 .trai .traitren .trena .so23 h1.so2{
+    position: relative;
+    top: 100px;
+    transition: 0.7s;
+}
+.mogo .thanh3 .trai .traitren .trena:hover .so23 h1.so2{
+    top:0;
+}
+.mogo .thanh3 .trai .traitren .trena .so34{
+    position: absolute;
+    top: 52%;
+    left: 0px;
+    text-align: center;
+    width: 100%;
+    overflow: hidden;
+}
+.mogo .thanh3 .trai .traitren .trena .so34 span.so3{
+    position: relative;
+    top: 50px;
+    transition: 0.7s;
+    color: red;
+    font-weight: bold;
+}
+.mogo .thanh3 .trai .traitren .trena:hover .so34 span.so3{
+    top:0px;
+}
+.mogo .thanh3 .trai .traitren .trena .so34 span.so4{
+    position: relative;
+    top: 50px;
+    transition: 0.7s;
+    color: #414141;
+    font-weight: bold;
+    padding-left: 10px;
+}
+.mogo .thanh3 .trai .traitren .trena:hover .so34 span.so4{
+    top: 0px;
+}
+.mogo .thanh3 .trai .traitren .trenb{
+        width: 50%;
+        position: relative;
+        overflow: hidden;
+        height: 100% ;
+    }
+    .mogo .thanh3 .trai .traitren .trenb img{
+        width: 105%;
+        position: absolute;
+        left: -10px;
+        transition: 0.5s;
+    }
+    .mogo .thanh3 .trai .traitren .trenb:hover img{
+        left: 0px;
+    }
+    .mogo .thanh3 .trai .traitren .trenb h1.so1{
+        position: absolute;
+        top: 40px;
+        left: 80px;
+        font-size: 30px;
+        opacity: 1;
+        transition: 0.7s;
+        color: #faf6f6;
+    }
+    .mogo .thanh3 .trai .traitren .trenb .manden{
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        background-color: rgb(27, 26, 26);
+        opacity: 0;
+        width: 100%;
+        height: 100%;
+    }
+    .mogo .thanh3 .trai .traitren .trenb:hover .manden{
+        opacity: 0.7;
+    }
+    .mogo .thanh3 .trai .traitren .trenb:hover h1.so1{
+        opacity: 0;
+    }
+    .mogo .thanh3 .trai .traitren .trenb .so23{
+        position: absolute;
+        top: 40%;
+        left: 0px;
+        text-align: center;
+        width: 100%;
+        overflow: hidden;
+    }
+    .mogo .thanh3 .trai .traitren .trenb .so23 h1.so2{
+        position: relative;
+        top: 100px;
+        transition: 0.7s;
+        color: wheat;
+    }
+    .mogo .thanh3 .trai .traitren .trenb:hover .so23 h1.so2{
+        top:0;
+    }
+    .mogo .thanh3 .trai .traitren .trenb .so34{
+        position: absolute;
+        top: 52%;
+        left: 0px;
+        text-align: center;
+        width: 100%;
+        overflow: hidden;
+    }
+    .mogo .thanh3 .trai .traitren .trenb .so34 span.so3{
+        position: relative;
+        top: 50px;
+        transition: 0.5s;
+        color: red;
+        font-weight: bold;
+    }
+    .mogo .thanh3 .trai .traitren .trenb:hover .so34 span.so3{
+        top:0px;
+    }
+    .mogo .thanh3 .trai .traitren .trenb .so34 span.so4{
+        position: relative;
+        top: 50px;
+        transition: 0.5s;
+        color: #ffffff;
+        font-weight: bold;
+        padding-left: 10px;
+    }
+    .mogo .thanh3 .trai .traitren .trenb:hover .so34 span.so4{
+        top: 0px;
+    }
+
+/* trái dưới */
+.mogo .thanh3 .trai .traiduoi{
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    height: 50% ;
+}
+.mogo .thanh3 .trai .traiduoi img{
+    width: 105%;
+    position: absolute;
+    left: -10px;
+    transition: 0.5s;
+}
+.mogo .thanh3 .trai .traiduoi:hover img{
+    left: 0px;
+}
+.mogo .thanh3 .trai .traiduoi h1.so1{
+    position: absolute;
+    top: 40px;
+    left: 80px;
+    font-size: 30px;
+    opacity: 1;
+    transition: 0.5s;
+    color: #faf6f6;
+}
+.mogo .thanh3 .trai .traiduoi .manxanh{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: rgb(204, 190, 255);
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+}
+.mogo .thanh3 .trai .traiduoi:hover .manxanh{
+    opacity: 0.7;
+}
+.mogo .thanh3 .trai .traiduoi:hover h1.so1{
+    opacity: 0;
+}
+.mogo .thanh3 .trai .traiduoi .so23{
+    position: absolute;
+    top: 40%;
+    left: 0px;
+    text-align: center;
+    width: 100%;
+    overflow: hidden;
+}
+.mogo .thanh3 .trai .traiduoi .so23 h1.so2{
+    position: relative;
+    top: 100px;
+    transition: 0.5s;
+    color: wheat;
+}
+.mogo .thanh3 .trai .traiduoi:hover .so23 h1.so2{
+    top:0;
+}
+.mogo .thanh3 .trai .traiduoi .so34{
+    position: absolute;
+    top: 52%;
+    left: 0px;
+    text-align: center;
+    width: 100%;
+    overflow: hidden;
+}
+.mogo .thanh3 .trai .traiduoi .so34 span.so3{
+    position: relative;
+    top: 50px;
+    transition: 0.5s;
+    color: red;
+    font-weight: bold;
+}
+.mogo .thanh3 .trai .traiduoi:hover .so34 span.so3{
+    top:0px;
+}
+.mogo .thanh3 .trai .traiduoi .so34 span.so4{
+    position: relative;
+    top: 50px;
+    transition: 0.5s;
+    color: #ffffff;
+    font-weight: bold;
+    padding-left: 10px;
+}
+.mogo .thanh3 .trai .traiduoi:hover .so34 span.so4{
+    top: 0px;
+}
+/* Phải */
+.mogo .thanh3 .phai{
+        width: 450px;
+        position: relative;
+        overflow: hidden;
+        height: 100% ;
+    }
+    .mogo .thanh3 .phai img{
+        width: 105%;
+        position: absolute;
+        left: -10px;
+        transition: 0.5s;
+    }
+    .mogo .thanh3 .phai:hover img{
+        left: 0px;
+    }
+    .mogo .thanh3 .phai h1.so1{
+        position: absolute;
+        top: 40px;
+        left: 80px;
+        font-size: 30px;
+        opacity: 1;
+        transition: 0.5s;
+        color: #faf6f6;
+    }
+    .mogo .thanh3 .phai .mando{
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        background-color: rgb(223, 190, 45);
+        opacity: 0;
+        width: 100%;
+        height: 100%;
+    }
+    .mogo .thanh3 .phai:hover .mando{
+        opacity: 0.7;
+    }
+    .mogo .thanh3 .phai:hover h1.so1{
+        opacity: 0;
+    }
+    .mogo .thanh3 .phai .so23{
+        position: absolute;
+        top: 40%;
+        left: 0px;
+        text-align: center;
+        width: 100%;
+        overflow: hidden;
+    }
+    .mogo .thanh3 .phai .so23 h1.so2{
+        position: relative;
+        top: 100px;
+        transition: 0.5s;
+        color: wheat;
+    }
+    .mogo .thanh3 .phai:hover .so23 h1.so2{
+        top:0;
+    }
+    .mogo .thanh3 .phai .so34{
+        position: absolute;
+        top: 52%;
+        left: 0px;
+        text-align: center;
+        width: 100%;
+        overflow: hidden;
+    }
+    .mogo .thanh3 .phai .so34 span.so3{
+        position: relative;
+        top: 50px;
+        transition: 0.5s;
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+    }
+    .mogo .thanh3 .phai:hover .so34 span.so3{
+        top:0px;
+    }
+    .mogo .thanh3 .phai .so34 span.so4{
+        position: relative;
+        top: 50px;
+        transition: 0.5s;
+        color: #ffffff;
+        font-weight: bold;
+        padding-left: 10px;
+}
+.mogo .thanh3 .phai:hover .so34 span.so4{
+    top: 0px;
+}
+.mogo .thanh4{
+width: 100%;
+display: flex;
+flex-wrap: wrap;
+}
+.mogo .thanh4 ._1anh{
+    width: 25%;
+    height: 335px;
+    position: relative;
+}
+.mogo .thanh4 ._1anh img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.mogo .thanh4 ._1anh .mantrang{
+    background-color: white;
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+}
+.mogo .thanh4 ._1anh:hover .mantrang{
+    opacity: 0.95;
+}
+.mogo .thanh4 ._1anh .bocchunho{
+    position: absolute;
+    top: 40px;
+    width: 100%;
+    text-align: center;
+}
+.mogo .thanh4 ._1anh .bocchunho a.chunho{
+    color: #333;
+    font-size: 25px;
+    text-decoration: none;
+    opacity: 0;
+    margin-top:50px;
+    transition: 0.7s;
+    display: inline-block;
+
+}
+.mogo .thanh4 ._1anh:hover a.chunho{
+    opacity: 1;
+    margin-top: 0px;
+}
+.mogo .thanh4 ._1anh .bocgiatien{
+    position: absolute;
+    top: 135px;
+    left: 130px;
+}
+.mogo .thanh4 ._1anh p.giatien{
+font-size: 30px;
+font-weight: bold;
+color: black;
+margin-top: 50px;
+opacity: 0;
+transition: 0.7s;
+}
+.mogo .thanh4 ._1anh:hover p.giatien{
+opacity: 1;
+margin-top: 0px;
+}
+.mogo .thanh4 ._1anh .tongfa{
+    position: absolute;
+    top: 200px;
+    left: 70px;
+}
+.mogo .thanh4 ._1anh a.fa1{
+    text-decoration: none;
+    
+}
+.mogo .thanh4 ._1anh a.fa1 .fa{
+    font-size: 20px;
+    color: #b7b7b7;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    margin-top: 50px;
+    opacity: 0;
+    font-weight: bold;
+    transition: 0.7s;
+    margin-left: 10px;
+}
+.mogo .thanh4 ._1anh:hover a.fa1 .fa{
+    opacity: 1;
+    margin-top: 0px;
+}
+.mogo .thanh4 ._1anh a.fa1 .fa:hover{
+ border: #fe5a1a solid  2px;
+ border-radius: 50%;
+ color: #fe5a1a;
+ opacity: 0.7;
+}
+/* Thanh5 */
+.mogo .thanh5{
+    width: 100%;
+    display: flex;
+    background-color: #777;
+    height: 450px;
+}
+.mogo .thanh5 .o1{
+    width: 33.333333%;
+    border-left: rgb(168, 148, 148) solid 2px;
+    position: relative;
+    
+}
+.mogo .thanh5 .o1 img.trang{
+    width: 100%;
+    height: 450px;
+    position: absolute;
+}
+.mogo .thanh5 .o1 img.lg{
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    top: 100px;
+    left: 200px;
+}
+.mogo .thanh5 .o1 h1{
+    position: absolute;
+    font-size: 30px;
+    color: #333;
+    top: 170px;
+    width: 300px;
+    left: 80px;
+    display: inline-block;
+    text-align: center;
+}
+.mogo .thanh5 .o1 p{
+    width: 400px;
+    position: absolute;
+    top: 270px;
+    left: 25px;
+    text-align: center;
+    font-size: 18px;
+    color: rgb(116, 102, 102);
+    font-weight: 400;
+}
