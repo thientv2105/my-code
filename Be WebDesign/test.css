@@ -1,0 +1,1110 @@
+*{margin: 0;padding: 0}
+/* Thanh slide */
+body,html{
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+body::-webkit-scrollbar{
+    width: 10px;
+    background-color: rgba(107, 114, 114, 0.959);
+}
+body::-webkit-scrollbar-thumb{
+    background-color: rgba(32, 27, 27, 0.959);
+    border-radius: 6px;
+}
+.boccacslide{
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+}
+.cacslide{
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+    height: 100%;
+}
+.cacslide ul li{
+    width: 100%;
+    height: 100%; 
+    list-style: none;
+    position: absolute;
+    opacity: 0;
+}
+.cacslide ul li.hienthi{
+    opacity: 1;
+    transition: 0.4s;
+}
+.cacslide ul li .motslide{
+    width: 100%;
+    height: 100%; 
+    top: 0px;
+
+}
+.cacslide ul li .motslide .anhnen{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+.motslide .tamgiactren{
+    position: absolute;
+    top: -190px;
+    right: 0px;
+    opacity: 0;
+}
+.cacslide ul li.hienthi .motslide .tamgiactren{
+    animation: trenxuong 1s forwards;
+    animation-delay: 0.4s;
+}
+@keyframes trenxuong{
+    from {
+        transform: translateX(100%) translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0%) translateY(0%);
+        opacity: 1;
+    }
+}
+
+.motslide .tamgiacduoi1{
+    position: absolute;
+    top: -480px;
+    left: 0px;
+    opacity: 0;
+}
+.cacslide ul li.hienthi .motslide .tamgiacduoi1{
+    animation: duoi1len 1s forwards;
+    animation-delay: 0.3s;
+}
+@keyframes duoi1len{
+    from {transform: translateX(-100%) translateY(100%); opacity: 0;}
+    to {transform: translateX(0) translateY(0); opacity: 1;}
+}
+.motslide .tamgiacduoi2{
+    position: absolute;
+    top: -240px;
+    left: 0px;
+    opacity: 0;
+}
+.cacslide ul li.hienthi .motslide .tamgiacduoi2{
+    animation: duoi2len 1s forwards;
+    animation-delay: 0.6s;
+}
+@keyframes duoi2len{
+    from {transform: translateX(-100%) translateY(100%); opacity: 0;}
+    to {transform: translateX(0) translateY(0); opacity: 1;}
+}
+.textnd{
+    position: absolute;
+    top: 80px;
+    width: 300px;
+    left: 100px;
+    color: white;
+    font-family: segoe ui light;
+}
+.textnd .bocspan1{
+    margin-left: -60px;
+    margin-top: -20px;
+    width: 200px;
+    background-color: rgb(52, 30, 73);
+    text-align: center;
+    cursor: pointer;
+}
+.textnd .bocspan2{
+    margin-top: -20px;
+    margin-left: -60px;
+    width: 200px;
+    background-color: rgb(156, 44, 44);
+    text-align: center;
+    cursor: pointer;
+}
+.textnd .bocspan3{
+    margin-top: -20px;
+    margin-left: -60px;
+    width: 200px;
+    background-color: rgb(83, 64, 64);
+    text-align: center;
+    cursor: pointer;
+}
+.textnd .span1{
+    font-size: 14px;
+}
+.textnd .span2{
+    font-size: 30px;
+    font-weight: bold;
+}
+.textnd .theh1{
+    font-size: 65px;
+    margin-top: 50px;
+    display: block;
+    opacity: 0;
+    font-family: 'Segoe UI light';
+}
+.textnd .theh2{
+    font-size: 35px;
+    opacity: 0;
+}
+.textnd .kengang{
+    width: 100px;
+    height: 2px;
+    background-color: white;margin: 30px 0 ; opacity: 0;}
+    
+
+.textnd .thep{
+    font-size: 12px;
+    opacity: 0;
+}
+.textnd .nut{
+    cursor: pointer;
+    font-size: 10px;
+    border: white solid 1px;
+    background-color: rgba(45, 45, 70, 0);
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px;
+    opacity: 0;
+}
+.cacslide ul li.hienthi .motslide .textnd .theh1,
+.cacslide ul li.hienthi .motslide .textnd .theh2,
+.cacslide ul li.hienthi .motslide .textnd .kengang,
+.cacslide ul li.hienthi .motslide .textnd .thep,
+.cacslide ul li.hienthi .motslide .textnd .nut{
+    animation : textvao 1s forwards;
+    animation-delay: 0.7s;
+}
+@keyframes textvao{
+    from{transform: translateX(-50px) ; opacity: 0;}
+    to{transform: translateX(0px) ; opacity: 1;}
+}
+.cacslide ul li.hienthi .motslide .textnd .theh1{
+    animation-delay: 0.7s;
+}
+.cacslide ul li.hienthi .motslide .textnd .theh2{
+    animation-delay: 0.8s;
+}
+.cacslide ul li.hienthi .motslide .textnd .kengang{
+    animation-delay: 0.9s;
+}
+.cacslide ul li.hienthi .motslide .textnd .thep{
+    animation-delay: 1s;
+}
+.cacslide ul li.hienthi .motslide .textnd .nut{
+    animation-delay: 1.1s;
+}
+
+/* Thanh nút bắt đầu */
+
+.thanhnut{
+    text-align: center;
+    position: absolute;
+    top: 89%;
+    left: 47%;
+    z-index: 5;
+}
+
+.thanhnut ul li{
+    display: inline-block;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: gray;
+    margin: 10px 0px;
+    position: relative;
+}
+.thanhnut ul li .bentrong{
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    top: 5px;
+    left: 5px;
+    background-color: white;
+    border-radius: 50%;
+    opacity: 0;
+    transition: 0.4s;
+}
+.thanhnut ul li:hover .bentrong{opacity: 1;}
+.thanhnut ul li:hover{
+    background-color: rgba(233, 234, 235, 0);
+    transition: 0.4s;
+    border: white solid 2px;
+    
+}
+.thanhnut ul .kichhoat{
+    background-color: rgba(233, 234, 235, 0);
+    transition: 0.4s;
+    border: white solid 2px;
+}
+.thanhnut ul .kichhoat .bentrong{
+    opacity: 1;
+}
+/* Khối mục lục */
+.khoimucluc{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+}
+.khoimucluc .nutmucluc1{
+    margin-top: 45px;
+    margin-left: 1290px;
+    color: rgb(162, 162, 216);
+    font-size: 25px;
+    cursor: pointer;
+    position: absolute;
+    z-index: 1;
+    transition: 0.3s;
+    position: fixed;
+    z-index: 5;
+
+}
+.khoimucluc .nutmucluc2{
+    margin-top: 50px;
+    margin-left: 1290px;
+    color: rgb(162, 162, 216);
+    font-size: 25px;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden; 
+    position: absolute;
+    z-index: 1;
+    transition: 0.3s;
+    position: fixed;
+    z-index: 6;
+}
+.khoimucluc .khoimauden{
+    background-color: rgba(0, 0, 0, 0.863);
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    display: block;
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    position: fixed;
+    transition: 0.5s;
+    z-index: 5;
+}
+.khoimucluc .khoitext{
+    width: 500px;
+    margin-top: 195px;
+    left: 425px;
+    text-align: center;
+    color: rgb(236, 235, 233);
+    font-size: 25px;
+    font-family: segoe ui light;
+    font-weight: bold;
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    position: fixed;
+    transition: 0.5s;
+    z-index: 5;
+}
+.khoimucluc .khoitext ul li{
+    list-style: none;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.khoimucluc .khoitext ul li:hover{
+    color: rgb(189, 192, 192);
+}
+.khoimucluc .khoitext ul li span.so1{
+    opacity: 0;
+    margin-left: 0px;
+    transition: 0.5s;
+    
+}
+.khoimucluc .khoitext ul li:hover span.so1{
+    opacity: 1;
+    margin-left:-40px;
+    margin-right:40px;
+
+}
+.khoimucluc .khoitext ul li:hover span.so2{
+    opacity: 1;
+    margin-left:40px;
+    margin-right:-40px;
+
+}
+.khoimucluc .khoitext ul li span.so2{
+    opacity: 0;
+    margin-left: 0px;
+    transition: 0.5s;
+}
+.khoimucluc .khoitext ul li .home{
+    color: rgb(178, 134, 219);
+}
+.khoimucluc .nutmucluc1.xoanut1{
+    opacity: 0;
+    visibility: hidden;
+}
+.khoimucluc .hienlenkhoiden{
+    opacity: 1;
+    visibility: visible;
+}
+.khoimucluc .hienlennut2{
+    opacity: 1;
+    visibility: visible;
+}
+.khoimucluc .hienlenkhoitext{
+    opacity: 1;
+    visibility: visible;
+}
+/* Xong khối mục lục */
+/* 380+ */
+.khoi380{
+    width: 70px;
+    height: 70px;
+    background-color: rgb(41, 36, 36);
+    color: white;
+    text-align: center;
+    position: absolute;
+    top: 400px;
+    right: 10px;
+    font-family: segoe ui light;
+    cursor: pointer;
+    position: fixed;
+    z-index: 5;
+    transition: 0.5s;
+}
+.khoi380.khoi380dira{
+    transform: translateX(-362px);
+    right: 0px;
+}
+.khoi380 p{
+    font-size: 28px;
+    padding-top: 5px;
+    font-weight: bold;
+    transition: 0.4s;
+}
+.khoi380 .nhapnhay{
+    color: rgb(114, 100, 100);
+    transition: 0.4s;
+}
+.khoi380 span{
+    display: inline-block;
+    top: 45px;
+    left: 5px;
+    position: absolute;
+}
+/* Khoi cua so thanh1 */
+.khoicuaso{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 362px;
+    height: 100%;
+    background-color: rgb(31, 36, 36);
+    transition: 0.5s;
+    position: fixed;
+    z-index: 6;
+    transform: translateX(362px);
+    border: 1px solid rgb(39, 36, 36);
+}
+.cuasodira{
+    transform: translateX(0px);
+}
+.khoicuaso .tren{
+    width: 100%;
+    height: 43%;
+}
+.khoicuaso .tren ul{
+    list-style: none;
+    text-align: center;
+    font-family: segoe ui light;
+    font-size: 20px;
+    font-weight: bold;
+    padding-top:15px;
+
+}
+.khoicuaso .tren ul li.so1{
+    transition: 0.4s;
+    cursor: pointer;
+    line-height: 27px;
+}
+.khoicuaso .tren ul li.so1:hover{
+    background-color: rgba(255, 255, 255, 0.308);
+}
+.khoicuaso .tren ul li.so1:hover a{
+    color: white;
+    transition: 0.4s;
+}
+.khoicuaso .tren ul li.so1 a{
+    text-decoration: none;
+    color: rgb(212, 196, 196);
+}
+.khoicuaso .tren ul li.so2:hover{
+    transition: 0.4s;
+    background-color: rgb(160, 62, 252);
+}
+.khoicuaso .tren ul li.so2{ cursor: pointer;}
+.khoicuaso .tren ul li.so2 a{
+    transition: 0.4s;
+    text-decoration: none;
+}
+.khoicuaso .tren ul li.so2:hover a{
+    color: white;
+}
+.khoicuaso .tren ul li.so3{
+    background-color: rgba(255, 255, 255, 0.075);
+    color: white;
+    margin-top: 10px;
+}
+.khoicuaso .tren ul li.so3 p.to{
+    font-size: 20px
+}
+.khoicuaso .tren ul li.so3 p.nho{
+    font-size: 13px;
+    margin-top: -15px;
+    color: rgb(163, 161, 157);
+    font-weight: 100;
+}
+.khoicuaso .duoi{
+    width: 100%;
+    height: 57%;
+    overflow: auto;
+}
+.khoicuaso .duoi::-webkit-scrollbar{
+    display: none;
+  }
+.khoicuaso .duoi ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    
+}
+.khoicuaso .duoi .hetduoi:hover{
+    background-color: rgb(186, 122, 245);
+}
+.khoicuaso .duoi .hetduoi{
+    width: 100%;
+    height: 70px;
+    background-color: rgb(159, 159, 236);
+    margin-top: -15px;
+    padding-top: 20px;
+    text-align: center;
+    transition: 0.5s;
+}
+.khoicuaso .duoi .hetduoi a{
+    font-size: 20px;
+    font-family: segoe ui light;
+    color: white;
+    text-decoration: none;
+}
+.khoicuaso .duoi ul li{
+    border: 1px solid rgb(39, 36, 36);
+    width: 180px;
+    box-sizing: border-box;
+}
+.khoicuaso .duoi ul li .motanh{
+    width: 100%;
+    position: relative;
+    cursor: pointer;
+}
+.khoicuaso .duoi ul li .motanh img{
+    width: 100%;
+}
+.khoicuaso .duoi ul li .motanh:hover .den{
+    opacity: 1;
+    visibility: visible;
+}
+.khoicuaso .duoi ul li .motanh .den{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.856);
+    transition: 0.5s;
+    z-index: 6;
+    opacity: 0;
+    visibility: hidden;
+    top: 0px;
+    left: 0px;
+}
+.khoicuaso .duoi ul li .motanh:hover .text{
+    opacity: 1;
+    visibility: visible;
+}
+.khoicuaso .duoi ul li .motanh .text{
+    width: 100%;
+    position: absolute;
+    font-size: 20px;
+    z-index: 6;
+    top: 60px;
+    text-align: center;
+    transition: 0.5s;
+    opacity: 0;
+    visibility: hidden;
+}
+.khoicuaso .duoi ul li .motanh .text .span1{
+    color: blueviolet;
+    border-right: blueviolet solid 2px;
+    padding-right: 5px;
+    
+}
+.khoicuaso .duoi ul li .motanh .text .span2{
+    color: rgb(231, 226, 235);
+}
+/* Hết thanh 1 
+Sang thanh2*/
+.thanh2{
+    width: 100%;
+    height: 270px;
+    background-color: rgb(240, 240, 240);
+    position: relative;
+}
+.thanh2 .thanh2trai{
+    position: absolute;
+    top: 80px;
+    left: 100px;
+    display: flex;
+}
+.thanh2 .thanh2trai .thanh2traia{
+    border: 1px solid rgb(172, 161, 161);
+    width: 220px;
+    height: 90px;
+    border-radius: 5px;
+    background-color: white;
+    display: flex;
+}
+
+.thanh2 .thanh2trai .thanh2traia .traianh{width: 50%;}
+.thanh2 .thanh2trai .thanh2traia .traianh img{
+    margin-top:20px;
+    margin-left:30px;
+    cursor: pointer;
+}
+.thanh2 .thanh2trai .thanh2traia p{
+    font-size: 40px;
+    font-family: segoe ui light;
+    margin-top:10px;
+    margin-left:20px;
+    font-weight: 550;
+    width: 50%;
+}
+.thanh2 .thanh2trai .thanh2traib{
+    font-family: segoe ui light;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-left: 30px;
+    width: 250px;
+}
+.thanh2 .thanh2phai{
+    position: absolute;
+    top: 80px;
+    right: 100px;
+}
+.thanh2 .thanh2phai .thanh2phaitren{
+    height: 60px;
+    overflow: hidden;
+}
+.thanh2 .thanh2phai .thanh2phaitren ul{
+    list-style: none;
+    display: flex;
+}
+.thanh2 .thanh2phai .thanh2phaitren ul li{
+    padding: 0 3px;
+}
+.thanh2 .thanh2phai .thanh2phaitren ul li .bocicon1{
+    display: block;
+    width: 60px;
+    height: 60px;
+    border : rgb(230, 212, 212) solid 1px;
+    background-color: rgba(255, 255, 255, 0.863);
+}
+.thanh2 .thanh2phai .thanh2phaitren ul li:hover .bocicon1{
+    margin-top: -60px;
+    transition: 0.5s;
+}
+
+.thanh2 .thanh2phai .thanh2phaitren ul li .bocicon1 .icon1{
+    margin-top: 18px;
+    margin-left: 22px;
+    font-size: 20px;
+    color: rgb(88, 75, 75);
+    cursor: pointer;
+}
+.thanh2 .thanh2phai .thanh2phaitren ul li .bocicon2fb{
+    display: block;
+    width: 60px;
+    height: 60px;
+    border : rgb(230, 212, 212) solid 1px;
+    background-color: rgba(24, 4, 116, 0.863);
+    cursor: pointer;
+}
+.thanh2 .thanh2phai .thanh2phaitren ul li .bocicon2gg{
+    display: block;
+    width: 60px;
+    height: 60px;
+    border : rgb(230, 212, 212) solid 1px;
+    background-color: rgba(172, 13, 13, 0.863);
+    cursor: pointer;
+ 
+}
+.thanh2 .thanh2phai .thanh2phaitren ul li .bocicon2tw{
+    display: block;
+    width: 60px;
+    height: 60px;
+    border : rgb(230, 212, 212) solid 1px;
+    background-color: rgba(143, 122, 236, 0.863);
+    cursor: pointer;
+
+}
+.thanh2 .thanh2phai .thanh2phaitren ul li .bocicon2gh{
+    display: block;
+    width: 60px;
+    height: 60px;
+    border : rgb(230, 212, 212) solid 1px;
+    background-color: rgba(15, 14, 20, 0.863);
+    cursor: pointer;
+   
+}
+.thanh2 .thanh2phai .thanh2phaitren ul li .icon2{
+    margin-top: 18px;
+    margin-left: 22px;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+}
+.thanh2 .thanh2phai .thanh2phaiduoi{
+    font-family: segoe ui light;
+    font-size: 20px;
+    margin-left: 5px;
+}
+/* Hết thanh 2
+Sang thanh 3 */
+.thanh3{
+    width: 100%;
+    height: 200px;
+    font-family: segoe ui light;
+    text-align: center;
+    padding-top: 50px;
+}
+.thanh3 .span1{
+    font-size: 50px;
+}
+.thanh3 .span2{
+    font-size: 50px;
+    font-weight: bold;
+}
+.thanh3 p{
+    font-size: 15px;
+    font-weight: bold;
+    color: rgb(122, 110, 110);
+}
+/* Hết thanh 3 */
+/* Thanh số 4 */
+.thanh4{
+    width: 1200px;
+    margin: auto;
+}
+.thanh4 ul{
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+}
+.thanh4 ul li.li4a{
+    margin-left: 25px;
+    position: relative;
+    cursor: pointer;
+
+}
+.thanh4 ul li .motanh{
+    width: 575px;
+    left: 298px;
+}
+.thanh4 ul li .motanh .anh1{
+    overflow: hidden;
+    position: absolute;
+}
+.thanh4 ul li .motanh .anh1 img{
+    width: 100%;
+    transition: 0.5s;
+}
+.thanh4 ul li .motanh:hover .anh1 img{
+    transform: scale(1.1);
+}
+.thanh4 ul li .motanh .anh2{
+    position: absolute;
+    top: 75px;
+    left: 45%;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 2;
+    transform: scale(1.5);
+    transition: 0.5s;
+}
+.thanh4 ul li.li4b .motanh .anh2{
+    position: absolute;
+    top: 75px;
+    left: 40%;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 2;
+    transform: scale(1.5);
+    transition: 0.5s;
+}
+.thanh4 ul li .motanh:hover .anh2{
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+}
+.thanh4 ul li .motanh .divden1{
+    position: absolute;
+    width: 100%;
+    height: 298px;
+    background-color: rgba(125, 125, 252, 0.815);
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.4s;
+}
+.thanh4 ul li .motanh:hover .divden1{
+    opacity: 1;
+    visibility: visible;
+}
+.thanh4 ul li .motanh:hover .divden2{
+    opacity: 1;
+    visibility: visible;
+}
+.thanh4 ul li .motanh .divden2{
+    position: absolute;
+    width: 100%;
+    height: 298px;
+    background-color: rgba(138, 111, 115, 0.767);
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.4s;
+}
+.thanh4 ul li .motanh:hover .divden3{
+    opacity: 1;
+    visibility: visible;
+}
+.thanh4 ul li .motanh .divden3{
+    position: absolute;
+    width: 100%;
+    height: 298px;
+    background-color: rgba(226, 240, 30, 0.815);
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.4s;
+}
+.thanh4 ul li .motanh:hover .divden4{
+    opacity: 1;
+    visibility: visible;
+}
+.thanh4 ul li .motanh .divden4{
+    position: absolute;
+    width: 100%;
+    height: 298px;
+    background-color: rgba(35, 5, 73, 0.767);
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.4s;
+}
+.thanh4 ul li .motanh:hover .divden5{
+    opacity: 1;
+    visibility: visible;
+}
+.thanh4 ul li .motanh .divden5{
+    position: absolute;
+    width: 100%;
+    height: 298px;
+    background-color: rgba(167, 51, 51, 0.767);
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.4s;
+}
+.thanh4 ul li .motanh:hover .text4{
+    transform: scale(1);
+}
+.thanh4 ul li .motanh .text4{
+    font-size: 25px;
+    font-family: segoe ui light;
+    position: absolute;
+    color: white;
+    top: 180px;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(1.5);
+    transition: 0.5s;
+}
+.thanh4 ul li .motanh:hover .text4{
+    opacity: 1;
+    visibility: visible;
+}
+.thanh4 ul li.li4b{
+    position: relative;
+    margin-top: 335px;
+    margin-left: 25px;
+    cursor: pointer;
+}
+.thanh4 ul li.li4b .motanh{
+    width: 375px;
+    height: 297px;
+}
+.thanh4 .nutthanh4{
+    width: 150px;
+    height: 50px;
+    margin: auto;
+    margin-top: 40px;
+    border: black solid 1.5px;
+    border-radius: 5px;
+    text-align: center;
+    padding-top: 10px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.thanh4 .nutthanh4:hover{
+    background-color: rgba(224, 221, 226, 0.733);
+}
+/* Hết thanh 4 */
+/* Sang thanh 5 */
+.thanh5{
+    background: url(img/thanh5anh1.jpg);
+    width: 100%;
+    height: 607px;
+    font-family: segoe ui light;
+    margin-top: 50px;
+    color: rgb(112, 98, 98);
+}
+.thanh5 p.chuto{
+    width: 450px;
+    font-size: 40px;
+    margin-left: 90px;
+    padding-top: 90px;
+}
+.thanh5 p.chuto span{
+    font-weight: bold;
+}
+.thanh5 p.chunho1{
+    width: 550px;
+    font-size: 20px;
+    margin-left: 90px;
+}
+.thanh5 p.chunho2{
+    width: 450px;
+    font-size: 20px;
+    margin-left: 90px;
+    padding-top: 40px;
+}
+.thanh5 a{
+    display: inline-block;
+    margin-left: 90px;
+    padding-top: 40px;
+    font-size: 20px;
+
+}
+/* Hết thanh 5
+Sang thanh 6 */
+.thanh6{
+    width: 100%;
+    height: 270px;
+    display: flex;
+    background-color: rgb(240, 240, 240);
+}
+.thanh6 .text{
+    width: 30%;
+    font-family: segoe ui light;
+    color: rgb(39, 34, 34);
+    margin-top: 80px;
+    margin-left: 90px;
+}
+.thanh6 .text .span1{font-size: 40px;}
+.thanh6 .text .span2{font-size: 40px; font-weight: bold;}
+.thanh6 .text p{
+    font-size: 18px;
+    width: 400px;
+    padding-top: 20px;
+    font-weight: bold;
+}
+.thanh6 .cacanh{width: 70%}
+.thanh6 .cacanh ul{
+    display: flex; 
+    list-style: none;
+    padding-top: 110px;
+}
+.thanh6 .cacanh ul li{
+    margin-left: 30px;
+}
+.thanh6 .cacanh ul li .motanh .anh1{
+    opacity: 1;
+    transition: 0.5s;
+    visibility: visible;
+    cursor: pointer;
+}
+.thanh6 .cacanh ul li .motanh:hover .anh1{
+    opacity: 0;
+    visibility: hidden;
+}
+.thanh6 .cacanh ul li .motanh .anh2{
+    margin-top: -80px;
+    opacity: 0;
+    transition: 0.5s;
+    visibility: hidden;
+}
+.thanh6 .cacanh ul li .motanh:hover .anh2{
+    opacity: 1;
+    visibility: visible;
+    cursor: pointer;
+}
+/* Hết thanh 6
+Sang thanh 7 */
+.thanh7{
+    width: 100%;
+    height: 441px;
+    background: url(img/thanh7anh1.jpg);
+    background-attachment: fixed;
+}
+.thanh7 .divboc{
+    display: flex;
+    padding-top: 150px;
+    padding-left: 90px;
+}
+.thanh7 .div2{
+    font-size: 35px;
+    padding-left: 30px;
+    margin-top: -12px;
+    width: 400px;
+}
+.thanh7 .div2 .ptren{color: rgb(146, 146, 240) ; font-weight: bold;}
+.thanh7 .div2 .pduoi{color: white;margin-top: -20px; width: 300px; line-height: 40px;}
+.thanh7 .div3{
+    display: flex;
+    padding-top: 40px;
+    padding-left: 20px;
+}
+.thanh7 .div3 .trai{
+    width: 270px;
+}
+.thanh7 .div3 .trai input{
+    width: 260px;
+    height: 40px;
+    padding-left: 15px;
+    font-size: 12px;
+}
+.thanh7 .div3 .phai input{
+    width: 80px;
+    height: 45px;
+    color: rgb(144, 55, 228);
+    border: rgb(51, 51, 241) solid 2px;
+    font-size: 14px;
+    line-height: 0px; 
+    background-color: rgba(0, 0, 255, 0);
+    border-radius: 5px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.thanh7 .div3 .phai input:hover{
+    background-color: rgb(92, 92, 212);
+    color: white;
+}
+.thanh7 .div3 .phai{
+    margin-top: -2px;
+}
+/* Thanh số 8 */
+.thanh8{
+    width: 100%;
+    background-color: rgba(26, 25, 25, 0.856);
+}
+.thanh8 .tren{
+    width: 100%;
+    display: flex;
+    height: 140px;
+    border-bottom: 1px solid gray;
+}
+.thanh8 .tren .trai{
+    margin-top: 50px;
+    margin-left: 90px;
+}
+.thanh8 .tren .phai{
+    margin-top: 80px;
+    margin-left: 60%;
+}
+.thanh8 .tren .phai ul{
+    list-style: none;
+    display: flex;
+}
+.thanh8 .tren .phai ul li{
+    padding-left: 20px;
+    margin-top: -25px;
+    font-size: 20px;
+}
+.thanh8 .tren .phai ul li .li8{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.thanh8 .tren .phai ul li .li8.facebook{
+    background-color: rgb(134, 47, 216);
+}
+.thanh8 .tren .phai ul li .li8.google{
+    background-color: rgb(138, 75, 38);
+}
+.thanh8 .tren .phai ul li .li8.twitter{
+    background-color: rgb(193, 128, 255);
+}
+.thanh8 .tren .phai ul li .li8.github{
+    background-color: rgb(255, 255, 255);
+}
+.thanh8 .tren .phai ul li .li8.in{
+    background-color: rgb(105, 89, 245);
+}
+.thanh8 .tren .phai ul li .li8 i{ 
+    padding-left: 7px;
+    padding-top: 6px;
+}
+.thanh8 .duoi{
+    width: 100%;
+    height: 84px;
+    display: flex;
+}
+.thanh8 .duoi .trai{
+    font-size: 15px;
+    margin-top: 30px;
+    margin-left: 90px;
+}
+.thanh8 .duoi .trai .span1{
+    color: rgb(177, 161, 161);
+}
+.thanh8 .duoi .trai .span2 a{
+    color: rgb(255, 255, 255);
+}
+.thanh8 .duoi .trai .span2 a:hover{
+    color: rgb(223, 213, 213);
+}
+.thanh8 .duoi .phai{
+    padding-top: 30px;
+    padding-left: 250px;
+}
+.thanh8 .duoi .phai ul{
+    display: flex;
+    list-style: none;
+}
+.thanh8 .duoi .phai ul li{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.thanh8 .duoi .phai ul .ngancach{
+    border-right: 1px solid gray;
+}
+.thanh8 .duoi .phai ul li a{
+    font-family: segoe ui light;
+    font-size: 13px;
+    color: gray;
+    transition: 0.4s;
+}
+.thanh8 .duoi .phai ul li:hover a{
+    color: white;
+}
+.thanh8 .duoi .phai ul li a.buyNow{
+    color: rgb(94, 215, 245);
+}
