@@ -260,7 +260,7 @@ body::-webkit-scrollbar-thumb{
     z-index: 1;
     transition: 0.3s;
     position: fixed;
-    z-index: 5;
+    z-index: 8;
 
 }
 .khoimucluc .nutmucluc2{
@@ -275,10 +275,10 @@ body::-webkit-scrollbar-thumb{
     z-index: 1;
     transition: 0.3s;
     position: fixed;
-    z-index: 6;
+    z-index: 8;
 }
 .khoimucluc .khoimauden{
-    background-color: rgba(0, 0, 0, 0.863);
+    background-color: rgba(0, 0, 0, 0.918);
     width: 100%;
     height: 100%;
     top: 0px;
@@ -289,7 +289,7 @@ body::-webkit-scrollbar-thumb{
     visibility: hidden;
     position: fixed;
     transition: 0.5s;
-    z-index: 5;
+    z-index: 7;
 }
 .khoimucluc .khoitext{
     width: 500px;
@@ -305,7 +305,8 @@ body::-webkit-scrollbar-thumb{
     visibility: hidden;
     position: fixed;
     transition: 0.5s;
-    z-index: 5;
+    z-index: 8;
+    line-height: 44px;
 }
 .khoimucluc .khoitext ul li{
     list-style: none;
@@ -511,11 +512,12 @@ body::-webkit-scrollbar-thumb{
 .khoicuaso .duoi ul li .motanh img{
     width: 100%;
 }
-.khoicuaso .duoi ul li .motanh:hover .den{
+.khoicuaso .duoi ul li .motanh:hover::before{
     opacity: 1;
     visibility: visible;
 }
-.khoicuaso .duoi ul li .motanh .den{
+.khoicuaso .duoi ul li .motanh::before{
+    content: "";
     position: absolute;
     width: 100%;
     height: 100%;
