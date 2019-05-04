@@ -215,20 +215,19 @@ body::-webkit-scrollbar-thumb{
     background-color: gray;
     margin: 10px 0px;
     position: relative;
+    box-sizing: border-box;
 }
 .thanhnut ul li .bentrong{
-    position: absolute;
     width: 6px;
     height: 6px;
-    top: 5px;
-    left: 5px;
+    margin-top: 30%;
+    margin-left: 30%;
     background-color: white;
     border-radius: 50%;
     opacity: 0;
-    transition: 0.4s;
 }
 .thanhnut ul li:hover .bentrong{opacity: 1;}
-.thanhnut ul li:hover{
+.thanhnut ul > li:hover{
     background-color: rgba(233, 234, 235, 0);
     transition: 0.4s;
     border: white solid 2px;
@@ -236,7 +235,7 @@ body::-webkit-scrollbar-thumb{
 }
 .thanhnut ul .kichhoat{
     background-color: rgba(233, 234, 235, 0);
-    transition: 0.4s;
+    transition: 0s;
     border: white solid 2px;
 }
 .thanhnut ul .kichhoat .bentrong{
