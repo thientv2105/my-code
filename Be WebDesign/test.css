@@ -839,7 +839,7 @@ Sang thanh 3 */
     font-weight: bold;
     opacity: 0;
     visibility: hidden;
-    transform: scale(1.5);
+    transform: scale(1.3);
     transition: 0.5s;
 }
 .thanh4 ul li .motanh:hover .text4{
